@@ -618,6 +618,17 @@
             justify-content: center;
             transition: all 0.3s ease;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        @media (max-width: 800px) {
+            .modal-close {
+                width: 40px;
+                height: 40px;
+                top: 1rem;
+                right: 1rem;
+                font-size: 1.2rem;
+            }
         }
 
         .modal-close:hover {
