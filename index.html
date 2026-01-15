@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buddi - Your Intelligent Plant Care Companion</title>
-    <meta name="description" content="Buddi helps you grow healthier plants with AI-powered insights, smart sensors, and personalized care reminders.">
-    
+    <meta name="description"
+        content="Buddi helps you grow healthier plants with AI-powered insights, smart sensors, and personalized care reminders.">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://plantbuddi.com/">
     <meta property="og:title" content="Buddi - Your Intelligent Plant Care Companion">
-    <meta property="og:description" content="AI-powered plant identification, smart watering reminders, and health monitoring. Never wonder when to water again.">
+    <meta property="og:description"
+        content="AI-powered plant identification, smart watering reminders, and health monitoring. Never wonder when to water again.">
     <meta property="og:image" content="https://plantbuddi.com/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://plantbuddi.com/">
     <meta name="twitter:title" content="Buddi - Your Intelligent Plant Care Companion">
-    <meta name="twitter:description" content="AI-powered plant identification, smart watering reminders, and health monitoring. Never wonder when to water again.">
+    <meta name="twitter:description"
+        content="AI-powered plant identification, smart watering reminders, and health monitoring. Never wonder when to water again.">
     <meta name="twitter:image" content="https://plantbuddi.com/images/og-image.png">
-    
+
     <!-- Additional meta -->
     <meta name="theme-color" content="#4a7c59">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Comfortaa:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="images/mini_icon.png">
     <style>
         :root {
@@ -293,7 +299,7 @@
             position: absolute;
             width: 260px;
             border-radius: 36px;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.15);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
             transition: all 0.5s ease;
             overflow: hidden;
             background: #000;
@@ -345,9 +351,23 @@
             opacity: 0.6;
         }
 
-        .floating-leaf:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
-        .floating-leaf:nth-child(2) { top: 60%; right: 15%; animation-delay: 2s; }
-        .floating-leaf:nth-child(3) { bottom: 20%; left: 20%; animation-delay: 4s; }
+        .floating-leaf:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-leaf:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-leaf:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
 
         /* Features Section */
         .features {
@@ -482,7 +502,7 @@
         .screenshot-item img {
             height: 500px;
             border-radius: 24px;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
             pointer-events: none;
             transition: box-shadow 0.3s ease;
         }
@@ -502,7 +522,7 @@
             background: white;
             padding: 0.5rem 1rem;
             border-radius: 50px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         /* Modal */
@@ -512,7 +532,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(10px);
             z-index: 2000;
             display: flex;
@@ -547,7 +567,7 @@
             height: 70vh;
             max-height: 600px;
             border-radius: 24px;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
         }
 
         .modal-info {
@@ -555,7 +575,7 @@
             padding: 2rem;
             border-radius: 20px;
             max-width: 300px;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
         }
 
         .modal-info h3 {
@@ -597,7 +617,7 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .modal-close:hover {
@@ -620,7 +640,7 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .modal-nav:hover {
@@ -653,7 +673,19 @@
             }
 
             .modal-nav {
-                display: none;
+                display: flex;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+                background: rgba(255, 255, 255, 0.9);
+            }
+
+            .modal-prev {
+                left: 1rem;
+            }
+
+            .modal-next {
+                right: 1rem;
             }
         }
 
@@ -723,7 +755,7 @@
 
         .app-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .app-btn.disabled {
@@ -820,7 +852,7 @@
         }
 
         .footer-links a {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             font-size: 0.9rem;
             transition: color 0.3s ease;
@@ -843,6 +875,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            align-items: flex-end;
             z-index: 999;
             opacity: 0;
             transform: translateY(20px);
@@ -860,8 +893,7 @@
             border-radius: 8px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             position: relative;
         }
 
@@ -876,7 +908,7 @@
 
         .floating-btn-apple:hover {
             transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         }
 
         .floating-btn-google {
@@ -982,7 +1014,7 @@
             border-radius: 24px;
             overflow: hidden;
             aspect-ratio: 16/9;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.2);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
         }
 
         .video-placeholder {
@@ -1144,6 +1176,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1155,6 +1188,7 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -1162,13 +1196,25 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
         }
 
         @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         /* Responsive */
@@ -1219,7 +1265,9 @@
                 font-size: 0.9rem;
             }
 
-            .features, .screenshots, .cta {
+            .features,
+            .screenshots,
+            .cta {
                 padding: 4rem 1rem;
             }
 
@@ -1234,6 +1282,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="leaf-bg"></div>
 
@@ -1252,19 +1301,26 @@
         <span class="floating-leaf">🌿</span>
         <span class="floating-leaf">🍃</span>
         <span class="floating-leaf">🌱</span>
-        
+
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">Now Available on iOS</div>
                 <h1>Your plants deserve <span>the best.</span></h1>
-                <p class="hero-text">Buddi combines AI-powered plant identification, smart watering reminders, and health monitoring to help your plants thrive. Never wonder "when did I last water this?" again.</p>
+                <p class="hero-text">Buddi combines AI-powered plant identification, smart watering reminders, and
+                    health monitoring to help your plants thrive. Never wonder "when did I last water this?" again.</p>
                 <div class="hero-buttons">
                     <a href="https://testflight.apple.com/join/jKjwnTnw" class="btn btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                        </svg>
                         Download for iOS
                     </a>
                     <div class="btn btn-android">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 11.48V8.27a6.68 6.68 0 0 0-1.62-4.4 6.4 6.4 0 0 0-4.15-2.07 6.27 6.27 0 0 0-4.59 1.5A6.49 6.49 0 0 0 5.4 7.96v3.52a1.9 1.9 0 0 0-1.4 1.84v5.68a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-5.68a1.9 1.9 0 0 0-1.4-1.84zM12 17.72a1.68 1.68 0 1 1 0-3.36 1.68 1.68 0 0 1 0 3.36zm3.6-6.24H8.4V8.07a3.6 3.6 0 1 1 7.2 0v3.41z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.6 11.48V8.27a6.68 6.68 0 0 0-1.62-4.4 6.4 6.4 0 0 0-4.15-2.07 6.27 6.27 0 0 0-4.59 1.5A6.49 6.49 0 0 0 5.4 7.96v3.52a1.9 1.9 0 0 0-1.4 1.84v5.68a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-5.68a1.9 1.9 0 0 0-1.4-1.84zM12 17.72a1.68 1.68 0 1 1 0-3.36 1.68 1.68 0 0 1 0 3.36zm3.6-6.24H8.4V8.07a3.6 3.6 0 1 1 7.2 0v3.41z" />
+                        </svg>
                         Android
                     </div>
                 </div>
@@ -1291,23 +1347,27 @@
             <div class="section-header">
                 <p class="section-label">Features</p>
                 <h2>Everything your plants need</h2>
-                <p class="section-subtitle">From AI identification to automated watering schedules, Buddi has you covered.</p>
+                <p class="section-subtitle">From AI identification to automated watering schedules, Buddi has you
+                    covered.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
                     <h3>AI Plant Identification</h3>
-                    <p>Snap a photo and instantly identify any plant. Get species info, care requirements, and toxicity warnings.</p>
+                    <p>Snap a photo and instantly identify any plant. Get species info, care requirements, and toxicity
+                        warnings.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💧</div>
                     <h3>Smart Watering</h3>
-                    <p>Connect IoT sensors for real-time soil moisture monitoring and automated watering schedules tailored to each plant.</p>
+                    <p>Connect IoT sensors for real-time soil moisture monitoring and automated watering schedules
+                        tailored to each plant.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🏥</div>
                     <h3>Health Analysis</h3>
-                    <p>AI-powered health checks detect issues early. Get actionable recommendations to keep your plants thriving.</p>
+                    <p>AI-powered health checks detect issues early. Get actionable recommendations to keep your plants
+                        thriving.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">☀️</div>
@@ -1317,7 +1377,8 @@
                 <div class="feature-card">
                     <div class="feature-icon">📐</div>
                     <h3>AR Pot Measurement</h3>
-                    <p>Use augmented reality to measure your pots and plants. Get accurate dimensions without a ruler.</p>
+                    <p>Use augmented reality to measure your pots and plants. Get accurate dimensions without a ruler.
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🏆</div>
@@ -1350,12 +1411,14 @@
                 <div class="step">
                     <div class="step-number">📸</div>
                     <h3>Add Your Plants</h3>
-                    <p>Snap a photo and our AI instantly identifies your plant, setting up personalized care schedules automatically.</p>
+                    <p>Snap a photo and our AI instantly identifies your plant, setting up personalized care schedules
+                        automatically.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">🔗</div>
                     <h3>Connect Sensors</h3>
-                    <p>Optional: pair a Buddi sensor for real-time soil moisture monitoring and automated watering alerts.</p>
+                    <p>Optional: pair a Buddi sensor for real-time soil moisture monitoring and automated watering
+                        alerts.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">🌱</div>
@@ -1367,113 +1430,147 @@
     </section>
     <section class="screenshots" id="screenshots">
         <div class="section-header">
-            <p class="section-label">See it in action</p>
+            <p class="section-label">Screenshots</p>
             <h2>Designed with care</h2>
-            <p class="section-subtitle">A beautiful, intuitive interface that makes plant care a joy.</p>
+            <p class="section-subtitle">An, intuitive interface that makes plant care a joy.</p>
         </div>
         <div class="screenshot-container" id="screenshotContainer">
             <div class="screenshot-scroll" id="screenshotScroll">
-                <div class="screenshot-item" data-title="Garden View" data-tag="Home" data-desc="Your digital garden dashboard. See all your plants at a glance with their current moisture levels and health status. Filter by room or view everything at once.">
+                <div class="screenshot-item" data-title="Garden View" data-tag="Home"
+                    data-desc="Your digital garden dashboard. See all your plants at a glance with their current moisture levels and health status. Filter by room or view everything at once.">
                     <img src="images/screen-garden.PNG" alt="Garden View">
                 </div>
-                <div class="screenshot-item" data-title="Smart Sensors" data-tag="IoT" data-desc="Real-time monitoring with connected sensors. Track water tank levels, soil moisture, and get AI-powered health analysis with actionable recommendations.">
+                <div class="screenshot-item" data-title="Smart Sensors" data-tag="IoT"
+                    data-desc="Real-time monitoring with connected sensors. Track water tank levels, soil moisture, and get AI-powered health analysis with actionable recommendations.">
                     <img src="images/screen-sensor.PNG" alt="Sensor Data">
                 </div>
-                <div class="screenshot-item" data-title="AI Identification" data-tag="AI" data-desc="Snap a photo and let our AI instantly identify your plant. Get species information, care requirements, and automatic setup for watering schedules.">
+                <div class="screenshot-item" data-title="AI Identification" data-tag="AI"
+                    data-desc="Snap a photo and let our AI instantly identify your plant. Get species information, care requirements, and automatic setup for watering schedules.">
                     <img src="images/screen-ai.PNG" alt="AI Identification">
                 </div>
-                <div class="screenshot-item" data-title="Health Analysis" data-tag="AI" data-desc="Detailed AI health reports analyze your plant photos to detect issues like overwatering, nutrient deficiencies, or pest problems with specific treatment advice.">
+                <div class="screenshot-item" data-title="Health Analysis" data-tag="AI"
+                    data-desc="Detailed AI health reports analyze your plant photos to detect issues like overwatering, nutrient deficiencies, or pest problems with specific treatment advice.">
                     <img src="images/screen-ai-analysis.PNG" alt="AI Health Analysis">
                 </div>
-                <div class="screenshot-item" data-title="Plant Dashboard" data-tag="Details" data-desc="Everything about your plant in one place. Quick access to photos, species info, community discussions, watering controls, and measurement tools.">
+                <div class="screenshot-item" data-title="Plant Dashboard" data-tag="Details"
+                    data-desc="Everything about your plant in one place. Quick access to photos, species info, community discussions, watering controls, and measurement tools.">
                     <img src="images/screen-detail.PNG" alt="Plant Detail">
                 </div>
-                <div class="screenshot-item" data-title="Plant Encyclopedia" data-tag="Info" data-desc="Comprehensive plant profiles with care difficulty, toxicity warnings, growth patterns, measurements, and personalized watering schedules.">
+                <div class="screenshot-item" data-title="Plant Encyclopedia" data-tag="Info"
+                    data-desc="Comprehensive plant profiles with care difficulty, toxicity warnings, growth patterns, measurements, and personalized watering schedules.">
                     <img src="images/screen-info.PNG" alt="Plant Info">
                 </div>
-                <div class="screenshot-item" data-title="Your Profile" data-tag="Social" data-desc="Track your plant care journey with streaks, points, and achievements. Complete weekly tasks to earn rewards and climb the leaderboard.">
+                <div class="screenshot-item" data-title="Your Profile" data-tag="Social"
+                    data-desc="Track your plant care journey with streaks, points, and achievements. Complete weekly tasks to earn rewards and climb the leaderboard.">
                     <img src="images/screen-profile.PNG" alt="Profile">
                 </div>
-                <div class="screenshot-item" data-title="Weekly Tasks" data-tag="Gamification" data-desc="Stay engaged with weekly photo challenges for each plant. Earn points, unlock badges, and build consistent care habits through fun goals.">
+                <div class="screenshot-item" data-title="Weekly Tasks" data-tag="Gamification"
+                    data-desc="Stay engaged with weekly photo challenges for each plant. Earn points, unlock badges, and build consistent care habits through fun goals.">
                     <img src="images/screen-tasks.PNG" alt="Weekly Tasks">
                 </div>
-                <div class="screenshot-item" data-title="Community Feed" data-tag="Social" data-desc="Share your plants, ask questions, and connect with fellow plant lovers. Browse by plant type, vote on posts, and discover new species to grow.">
+                <div class="screenshot-item" data-title="Community Feed" data-tag="Social"
+                    data-desc="Share your plants, ask questions, and connect with fellow plant lovers. Browse by plant type, vote on posts, and discover new species to grow.">
                     <img src="images/screen-community.PNG" alt="Community">
                 </div>
-                <div class="screenshot-item" data-title="Light Meter" data-tag="Tools" data-desc="Measure light intensity anywhere using your phone's sensors. Get recommendations on whether the spot suits your plant's needs.">
+                <div class="screenshot-item" data-title="Light Meter" data-tag="Tools"
+                    data-desc="Measure light intensity anywhere using your phone's sensors. Get recommendations on whether the spot suits your plant's needs.">
                     <img src="images/screen-light.PNG" alt="Light Meter">
                 </div>
-                <div class="screenshot-item" data-title="AR Measurement" data-tag="Tools" data-desc="Use augmented reality to measure your pots and plants precisely. Perfect for calculating soil volume or tracking growth over time.">
+                <div class="screenshot-item" data-title="AR Measurement" data-tag="Tools"
+                    data-desc="Use augmented reality to measure your pots and plants precisely. Perfect for calculating soil volume or tracking growth over time.">
                     <img src="images/screen_measure.PNG" alt="AR Measurement">
                 </div>
-                <div class="screenshot-item" data-title="Photo Gallery" data-tag="Timeline" data-desc="Document your plant's journey with dated photos. Track growth, compare health over time, and see how far your plant has come.">
+                <div class="screenshot-item" data-title="Photo Gallery" data-tag="Timeline"
+                    data-desc="Document your plant's journey with dated photos. Track growth, compare health over time, and see how far your plant has come.">
                     <img src="images/screen-gallery.PNG" alt="Photo Gallery">
                 </div>
-                <div class="screenshot-item" data-title="Friend's Garden" data-tag="Social" data-desc="Visit your friends' gardens, see their plant collections, check out their badges, and get inspiration for new plants to add to your own collection.">
+                <div class="screenshot-item" data-title="Friend's Garden" data-tag="Social"
+                    data-desc="Visit your friends' gardens, see their plant collections, check out their badges, and get inspiration for new plants to add to your own collection.">
                     <img src="images/screen-friend-garden.PNG" alt="Friend's Garden">
                 </div>
-                <div class="screenshot-item" data-title="Health History" data-tag="Analysis" data-desc="Review past health checks with photos and AI analysis. Track your plant's recovery and see health trends over time.">
+                <div class="screenshot-item" data-title="Health History" data-tag="Analysis"
+                    data-desc="Review past health checks with photos and AI analysis. Track your plant's recovery and see health trends over time.">
                     <img src="images/screen-health.PNG" alt="Health Check">
                 </div>
-                <div class="screenshot-item" data-title="Care Schedule" data-tag="Reminders" data-desc="Never miss a care task. See upcoming watering, rotation, and fertilizing reminders with countdowns. Add custom reminders for any care routine.">
+                <div class="screenshot-item" data-title="Care Schedule" data-tag="Reminders"
+                    data-desc="Never miss a care task. See upcoming watering, rotation, and fertilizing reminders with countdowns. Add custom reminders for any care routine.">
                     <img src="images/screen-care.PNG" alt="Care Schedule">
                 </div>
-                <div class="screenshot-item" data-title="Watering Guide" data-tag="Info" data-desc="Detailed watering instructions with exact amounts, moisture ranges, and environmental requirements like light, temperature, and humidity levels.">
+                <div class="screenshot-item" data-title="Watering Guide" data-tag="Info"
+                    data-desc="Detailed watering instructions with exact amounts, moisture ranges, and environmental requirements like light, temperature, and humidity levels.">
                     <img src="images/screen-watering-detailed.PNG" alt="Watering Details">
                 </div>
-                <div class="screenshot-item" data-title="Maintenance & Pests" data-tag="Info" data-desc="Complete maintenance guides including soil type, pH levels, fertilizing schedules, repotting frequency, and common pests and diseases to watch for.">
+                <div class="screenshot-item" data-title="Maintenance & Pests" data-tag="Info"
+                    data-desc="Complete maintenance guides including soil type, pH levels, fertilizing schedules, repotting frequency, and common pests and diseases to watch for.">
                     <img src="images/screen-desise-maintanance.PNG" alt="Maintenance Info">
                 </div>
                 <!-- Duplicate for seamless loop -->
-                <div class="screenshot-item" data-title="Garden View" data-tag="Home" data-desc="Your digital garden dashboard. See all your plants at a glance with their current moisture levels and health status. Filter by room or view everything at once.">
+                <div class="screenshot-item" data-title="Garden View" data-tag="Home"
+                    data-desc="Your digital garden dashboard. See all your plants at a glance with their current moisture levels and health status. Filter by room or view everything at once.">
                     <img src="images/screen-garden.PNG" alt="Garden View">
                 </div>
-                <div class="screenshot-item" data-title="Smart Sensors" data-tag="IoT" data-desc="Real-time monitoring with connected sensors. Track water tank levels, soil moisture, and get AI-powered health analysis with actionable recommendations.">
+                <div class="screenshot-item" data-title="Smart Sensors" data-tag="IoT"
+                    data-desc="Real-time monitoring with connected sensors. Track water tank levels, soil moisture, and get AI-powered health analysis with actionable recommendations.">
                     <img src="images/screen-sensor.PNG" alt="Sensor Data">
                 </div>
-                <div class="screenshot-item" data-title="AI Identification" data-tag="AI" data-desc="Snap a photo and let our AI instantly identify your plant. Get species information, care requirements, and automatic setup for watering schedules.">
+                <div class="screenshot-item" data-title="AI Identification" data-tag="AI"
+                    data-desc="Snap a photo and let our AI instantly identify your plant. Get species information, care requirements, and automatic setup for watering schedules.">
                     <img src="images/screen-ai.PNG" alt="AI Identification">
                 </div>
-                <div class="screenshot-item" data-title="Health Analysis" data-tag="AI" data-desc="Detailed AI health reports analyze your plant photos to detect issues like overwatering, nutrient deficiencies, or pest problems with specific treatment advice.">
+                <div class="screenshot-item" data-title="Health Analysis" data-tag="AI"
+                    data-desc="Detailed AI health reports analyze your plant photos to detect issues like overwatering, nutrient deficiencies, or pest problems with specific treatment advice.">
                     <img src="images/screen-ai-analysis.PNG" alt="AI Health Analysis">
                 </div>
-                <div class="screenshot-item" data-title="Plant Dashboard" data-tag="Details" data-desc="Everything about your plant in one place. Quick access to photos, species info, community discussions, watering controls, and measurement tools.">
+                <div class="screenshot-item" data-title="Plant Dashboard" data-tag="Details"
+                    data-desc="Everything about your plant in one place. Quick access to photos, species info, community discussions, watering controls, and measurement tools.">
                     <img src="images/screen-detail.PNG" alt="Plant Detail">
                 </div>
-                <div class="screenshot-item" data-title="Plant Encyclopedia" data-tag="Info" data-desc="Comprehensive plant profiles with care difficulty, toxicity warnings, growth patterns, measurements, and personalized watering schedules.">
+                <div class="screenshot-item" data-title="Plant Encyclopedia" data-tag="Info"
+                    data-desc="Comprehensive plant profiles with care difficulty, toxicity warnings, growth patterns, measurements, and personalized watering schedules.">
                     <img src="images/screen-info.PNG" alt="Plant Info">
                 </div>
-                <div class="screenshot-item" data-title="Your Profile" data-tag="Social" data-desc="Track your plant care journey with streaks, points, and achievements. Complete weekly tasks to earn rewards and climb the leaderboard.">
+                <div class="screenshot-item" data-title="Your Profile" data-tag="Social"
+                    data-desc="Track your plant care journey with streaks, points, and achievements. Complete weekly tasks to earn rewards and climb the leaderboard.">
                     <img src="images/screen-profile.PNG" alt="Profile">
                 </div>
-                <div class="screenshot-item" data-title="Weekly Tasks" data-tag="Gamification" data-desc="Stay engaged with weekly photo challenges for each plant. Earn points, unlock badges, and build consistent care habits through fun goals.">
+                <div class="screenshot-item" data-title="Weekly Tasks" data-tag="Gamification"
+                    data-desc="Stay engaged with weekly photo challenges for each plant. Earn points, unlock badges, and build consistent care habits through fun goals.">
                     <img src="images/screen-tasks.PNG" alt="Weekly Tasks">
                 </div>
-                <div class="screenshot-item" data-title="Community Feed" data-tag="Social" data-desc="Share your plants, ask questions, and connect with fellow plant lovers. Browse by plant type, vote on posts, and discover new species to grow.">
+                <div class="screenshot-item" data-title="Community Feed" data-tag="Social"
+                    data-desc="Share your plants, ask questions, and connect with fellow plant lovers. Browse by plant type, vote on posts, and discover new species to grow.">
                     <img src="images/screen-community.PNG" alt="Community">
                 </div>
-                <div class="screenshot-item" data-title="Light Meter" data-tag="Tools" data-desc="Measure light intensity anywhere using your phone's sensors. Get recommendations on whether the spot suits your plant's needs.">
+                <div class="screenshot-item" data-title="Light Meter" data-tag="Tools"
+                    data-desc="Measure light intensity anywhere using your phone's sensors. Get recommendations on whether the spot suits your plant's needs.">
                     <img src="images/screen-light.PNG" alt="Light Meter">
                 </div>
-                <div class="screenshot-item" data-title="AR Measurement" data-tag="Tools" data-desc="Use augmented reality to measure your pots and plants precisely. Perfect for calculating soil volume or tracking growth over time.">
+                <div class="screenshot-item" data-title="AR Measurement" data-tag="Tools"
+                    data-desc="Use augmented reality to measure your pots and plants precisely. Perfect for calculating soil volume or tracking growth over time.">
                     <img src="images/screen_measure.PNG" alt="AR Measurement">
                 </div>
-                <div class="screenshot-item" data-title="Photo Gallery" data-tag="Timeline" data-desc="Document your plant's journey with dated photos. Track growth, compare health over time, and see how far your plant has come.">
+                <div class="screenshot-item" data-title="Photo Gallery" data-tag="Timeline"
+                    data-desc="Document your plant's journey with dated photos. Track growth, compare health over time, and see how far your plant has come.">
                     <img src="images/screen-gallery.PNG" alt="Photo Gallery">
                 </div>
-                <div class="screenshot-item" data-title="Friend's Garden" data-tag="Social" data-desc="Visit your friends' gardens, see their plant collections, check out their badges, and get inspiration for new plants to add to your own collection.">
+                <div class="screenshot-item" data-title="Friend's Garden" data-tag="Social"
+                    data-desc="Visit your friends' gardens, see their plant collections, check out their badges, and get inspiration for new plants to add to your own collection.">
                     <img src="images/screen-friend-garden.PNG" alt="Friend's Garden">
                 </div>
-                <div class="screenshot-item" data-title="Health History" data-tag="Analysis" data-desc="Review past health checks with photos and AI analysis. Track your plant's recovery and see health trends over time.">
+                <div class="screenshot-item" data-title="Health History" data-tag="Analysis"
+                    data-desc="Review past health checks with photos and AI analysis. Track your plant's recovery and see health trends over time.">
                     <img src="images/screen-health.PNG" alt="Health Check">
                 </div>
-                <div class="screenshot-item" data-title="Care Schedule" data-tag="Reminders" data-desc="Never miss a care task. See upcoming watering, rotation, and fertilizing reminders with countdowns. Add custom reminders for any care routine.">
+                <div class="screenshot-item" data-title="Care Schedule" data-tag="Reminders"
+                    data-desc="Never miss a care task. See upcoming watering, rotation, and fertilizing reminders with countdowns. Add custom reminders for any care routine.">
                     <img src="images/screen-care.PNG" alt="Care Schedule">
                 </div>
-                <div class="screenshot-item" data-title="Watering Guide" data-tag="Info" data-desc="Detailed watering instructions with exact amounts, moisture ranges, and environmental requirements like light, temperature, and humidity levels.">
+                <div class="screenshot-item" data-title="Watering Guide" data-tag="Info"
+                    data-desc="Detailed watering instructions with exact amounts, moisture ranges, and environmental requirements like light, temperature, and humidity levels.">
                     <img src="images/screen-watering-detailed.PNG" alt="Watering Details">
                 </div>
-                <div class="screenshot-item" data-title="Maintenance & Pests" data-tag="Info" data-desc="Complete maintenance guides including soil type, pH levels, fertilizing schedules, repotting frequency, and common pests and diseases to watch for.">
+                <div class="screenshot-item" data-title="Maintenance & Pests" data-tag="Info"
+                    data-desc="Complete maintenance guides including soil type, pH levels, fertilizing schedules, repotting frequency, and common pests and diseases to watch for.">
                     <img src="images/screen-desise-maintanance.PNG" alt="Maintenance Info">
                 </div>
             </div>
@@ -1508,7 +1605,9 @@
                 <div class="video-wrapper">
                     <div class="video-placeholder" id="videoPlaceholder">
                         <div class="play-button">
-                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
                         </div>
                         <p>Demo video coming soon</p>
                         <small>We're putting the finishing touches on it</small>
@@ -1531,7 +1630,8 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">I've killed so many plants before Buddi. The AI health checks caught my fiddle leaf fig's overwatering problem before it was too late. It's actually thriving now!</p>
+                    <p class="testimonial-text">I've killed so many plants before Buddi. The AI health checks caught my
+                        fiddle leaf fig's overwatering problem before it was too late. It's actually thriving now!</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">🌿</div>
                         <div class="testimonial-info">
@@ -1542,7 +1642,9 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">The sensor integration is a game-changer. I travel for work and used to come home to dead plants. Now they get watered automatically and I can check on them from anywhere.</p>
+                    <p class="testimonial-text">The sensor integration is a game-changer. I travel for work and used to
+                        come home to dead plants. Now they get watered automatically and I can check on them from
+                        anywhere.</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">🪴</div>
                         <div class="testimonial-info">
@@ -1553,7 +1655,8 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">Finally an app that makes plant care fun! The streaks and badges keep me motivated, and the community is so helpful when I have questions about my monstera.</p>
+                    <p class="testimonial-text">Finally an app that makes plant care fun! The streaks and badges keep me
+                        motivated, and the community is so helpful when I have questions about my monstera.</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">🌸</div>
                         <div class="testimonial-info">
@@ -1617,7 +1720,7 @@
             <div class="footer-links">
                 <a href="support.html">Support</a>
                 <a href="privacy.html">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
             <p class="footer-copy">© 2026 Buddi. Made by plant lovers for plant lovers.</p>
         </div>
@@ -1627,14 +1730,14 @@
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         const floatingButtons = document.getElementById('floatingButtons');
-        
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
-            
+
             // Show floating buttons after scrolling past hero
             if (window.scrollY > 600) {
                 floatingButtons.classList.add('visible');
@@ -1780,4 +1883,5 @@
         });
     </script>
 </body>
+
 </html>
