@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buddi - Your Intelligent Plant Care Companion</title>
     <meta name="description" content="Buddi helps you grow healthier plants with AI-powered insights, smart sensors, and personalized care reminders.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plantbuddi.com/">
+    <meta property="og:title" content="Buddi - Your Intelligent Plant Care Companion">
+    <meta property="og:description" content="AI-powered plant identification, smart watering reminders, and health monitoring. Never wonder when to water again.">
+    <meta property="og:image" content="https://plantbuddi.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://plantbuddi.com/">
+    <meta name="twitter:title" content="Buddi - Your Intelligent Plant Care Companion">
+    <meta name="twitter:description" content="AI-powered plant identification, smart watering reminders, and health monitoring. Never wonder when to water again.">
+    <meta name="twitter:image" content="https://plantbuddi.com/images/og-image.png">
+    
+    <!-- Additional meta -->
+    <meta name="theme-color" content="#4a7c59">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -776,6 +798,306 @@
             opacity: 0.6;
         }
 
+        /* Floating Download Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .floating-buttons.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .floating-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .floating-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .floating-btn-apple {
+            background: #000;
+            color: white;
+        }
+
+        .floating-btn-apple:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .floating-btn-google {
+            background: white;
+            color: var(--text-muted);
+            border: 1px solid #ddd;
+            position: relative;
+        }
+
+        .floating-btn-google::after {
+            content: 'Soon';
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            background: var(--terracotta);
+            color: white;
+            font-size: 0.6rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 8rem 2rem;
+            background: white;
+        }
+
+        .steps-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            position: relative;
+        }
+
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 15%;
+            right: 15%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--sage-light), var(--leaf-green), var(--sage-light));
+            z-index: 0;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--leaf-green), var(--sage));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            box-shadow: 0 10px 40px rgba(74, 124, 89, 0.3);
+        }
+
+        .step h3 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .step p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            position: relative;
+            background: var(--text-dark);
+            border-radius: 24px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.2);
+        }
+
+        .video-placeholder {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--text-dark) 0%, #1a2e1a 100%);
+            color: white;
+        }
+
+        .play-button {
+            width: 100px;
+            height: 100px;
+            background: var(--leaf-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(74, 124, 89, 0.4);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            background: var(--leaf-dark);
+        }
+
+        .play-button svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+            margin-left: 5px;
+        }
+
+        .video-placeholder p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .video-placeholder small {
+            font-size: 0.85rem;
+            opacity: 0.5;
+            margin-top: 0.5rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 8rem 2rem;
+            background: white;
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(74, 124, 89, 0.1);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 5rem;
+            font-family: Georgia, serif;
+            color: var(--sage);
+            line-height: 1;
+            opacity: 0.5;
+        }
+
+        .testimonial-stars {
+            color: #f5b942;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--leaf-green), var(--sage));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .testimonial-info h4 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        .testimonial-info p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 800px) {
+            .steps-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .steps-container::before {
+                display: none;
+            }
+
+            .floating-buttons {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .floating-btn span {
+                display: none;
+            }
+
+            .floating-btn {
+                padding: 0.75rem;
+            }
+        }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -877,7 +1199,7 @@
 
     <!-- Navigation -->
     <nav id="navbar">
-        <img src="images/logo_light.png" alt="Buddi" class="nav-logo">
+        <img src="images/logo_dark.png" alt="Buddi" class="nav-logo">
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#screenshots">Screenshots</a>
@@ -976,7 +1298,33 @@
         </div>
     </section>
 
-    <!-- Screenshots Section -->
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">How It Works</p>
+                <h2>Get started in 3 simple steps</h2>
+                <p class="section-subtitle">From download to thriving plants in minutes.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">📸</div>
+                    <h3>Add Your Plants</h3>
+                    <p>Snap a photo and our AI instantly identifies your plant, setting up personalized care schedules automatically.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">🔗</div>
+                    <h3>Connect Sensors</h3>
+                    <p>Optional: pair a Buddi sensor for real-time soil moisture monitoring and automated watering alerts.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">🌱</div>
+                    <h3>Watch Them Thrive</h3>
+                    <p>Get smart reminders, track health over time, and join a community of plant lovers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="screenshots" id="screenshots">
         <div class="section-header">
             <p class="section-label">See it in action</p>
@@ -1108,6 +1456,76 @@
         </div>
     </div>
 
+    <!-- Video Section -->
+    <section class="video-section" id="demo">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">See It In Action</p>
+                <h2>Watch Buddi in action</h2>
+                <p class="section-subtitle">A quick look at how Buddi helps you care for your plants.</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <div class="video-placeholder" id="videoPlaceholder">
+                        <div class="play-button">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <p>Demo video coming soon</p>
+                        <small>We're putting the finishing touches on it</small>
+                    </div>
+                    <!-- Replace with actual video when ready -->
+                    <!-- <iframe src="YOUR_VIDEO_URL" frameborder="0" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">Testimonials</p>
+                <h2>Loved by plant parents</h2>
+                <p class="section-subtitle">See what our early users are saying about Buddi.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">I've killed so many plants before Buddi. The AI health checks caught my fiddle leaf fig's overwatering problem before it was too late. It's actually thriving now!</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">🌿</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah M.</h4>
+                            <p>Plant mom of 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">The sensor integration is a game-changer. I travel for work and used to come home to dead plants. Now they get watered automatically and I can check on them from anywhere.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">🪴</div>
+                        <div class="testimonial-info">
+                            <h4>James K.</h4>
+                            <p>Frequent traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Finally an app that makes plant care fun! The streaks and badges keep me motivated, and the community is so helpful when I have questions about my monstera.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">🌸</div>
+                        <div class="testimonial-info">
+                            <h4>Emily R.</h4>
+                            <p>Beginner gardener</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Stats Section -->
     <section class="stats">
         <div class="stats-grid">
@@ -1132,14 +1550,21 @@
         <p>Download Buddi and give your plants the care they deserve.</p>
         <div class="app-buttons">
             <a href="https://apps.apple.com/app/buddi" class="app-btn">
-                <span class="app-btn-icon">🍎</span>
+                <svg class="app-btn-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
                 <div class="app-btn-text">
                     <small>Download on the</small>
                     <span>App Store</span>
                 </div>
             </a>
             <div class="app-btn disabled">
-                <span class="app-btn-icon">🤖</span>
+                <svg class="app-btn-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="#4285F4" d="M3.06 1.54C2.88 1.86 2.78 2.26 2.78 2.73V21.27c0 .47.1.87.28 1.19l.09.1L14.3 11.24v-.25-.25L3.15 1.45l-.09.09z"/>
+                    <path fill="#34A853" d="M18 15.09l-3.7-3.85L14.3 11l.01-.24 3.7-3.85.08.05 4.38 2.55c1.25.73 1.25 1.91 0 2.64L18.09 15l-.09.09z"/>
+                    <path fill="#FBBC05" d="M18.09 15L14.3 11 3.15 22.46c.41.44 1.09.46 1.86.03L18.09 15z"/>
+                    <path fill="#EA4335" d="M18.09 7L5.01 1.51c-.77-.43-1.45-.41-1.86.03L14.3 11l3.79-4z"/>
+                </svg>
                 <div class="app-btn-text">
                     <small>Coming soon to</small>
                     <span>Google Play</span>
@@ -1148,10 +1573,29 @@
         </div>
     </section>
 
+    <!-- Floating Download Buttons -->
+    <div class="floating-buttons" id="floatingButtons">
+        <a href="https://apps.apple.com/app/buddi" class="floating-btn floating-btn-apple">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span>App Store</span>
+        </a>
+        <div class="floating-btn floating-btn-google">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path fill="#4285F4" d="M3.06 1.54C2.88 1.86 2.78 2.26 2.78 2.73V21.27c0 .47.1.87.28 1.19l.09.1L14.3 11.24v-.25-.25L3.15 1.45l-.09.09z"/>
+                <path fill="#34A853" d="M18 15.09l-3.7-3.85L14.3 11l.01-.24 3.7-3.85.08.05 4.38 2.55c1.25.73 1.25 1.91 0 2.64L18.09 15l-.09.09z"/>
+                <path fill="#FBBC05" d="M18.09 15L14.3 11 3.15 22.46c.41.44 1.09.46 1.86.03L18.09 15z"/>
+                <path fill="#EA4335" d="M18.09 7L5.01 1.51c-.77-.43-1.45-.41-1.86.03L14.3 11l3.79-4z"/>
+            </svg>
+            <span>Google Play</span>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <img src="images/logo_dark.png" alt="Buddi" class="footer-logo">
+            <img src="images/logo_light.png" alt="Buddi" class="footer-logo">
             <div class="footer-links">
                 <a href="support.html">Support</a>
                 <a href="privacy.html">Privacy Policy</a>
@@ -1164,11 +1608,20 @@
     <script>
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
+        const floatingButtons = document.getElementById('floatingButtons');
+        
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
+            }
+            
+            // Show floating buttons after scrolling past hero
+            if (window.scrollY > 600) {
+                floatingButtons.classList.add('visible');
+            } else {
+                floatingButtons.classList.remove('visible');
             }
         });
 
