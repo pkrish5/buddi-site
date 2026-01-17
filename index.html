@@ -262,14 +262,15 @@
         }
 
         .btn-android {
-            background: var(--sand);
-            color: var(--text-muted);
-            position: relative;
+            background: white;
+            color: var(--text-dark);
+            border: 2px solid var(--text-muted);
         }
 
         .btn-android:hover {
+            border-color: var(--leaf-green);
+            color: var(--leaf-green);
             transform: translateY(-3px);
-            background: #e8e1d5;
         }
 
         /* Phone Mockup */
@@ -612,6 +613,31 @@
             z-index: 10;
         }
 
+        .beta-modal-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
+        }
+
+        .beta-modal-content h3 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .beta-modal-content p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
         @media (max-width: 800px) {
             .modal-close {
                 width: 40px;
@@ -806,26 +832,7 @@
             height: 54px;
         }
 
-        .store-badge-disabled {
-            opacity: 0.6;
-            cursor: default;
-        }
 
-        .store-badge-disabled:hover {
-            transform: none;
-        }
-
-        .coming-soon-tag {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: var(--terracotta);
-            color: white;
-            font-size: 0.65rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 20px;
-            font-weight: 600;
-        }
 
         /* Footer */
         footer {
@@ -915,20 +922,9 @@
 
         .floating-btn-google {
             background: transparent;
-            opacity: 0.5;
         }
 
-        .floating-soon {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background: var(--terracotta);
-            color: white;
-            font-size: 0.55rem;
-            padding: 0.15rem 0.35rem;
-            border-radius: 10px;
-            font-weight: 600;
-        }
+
 
         @media (max-width: 800px) {
             .floating-buttons {
@@ -1320,11 +1316,10 @@
                         </svg>
                         Download for iOS
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.pranavkrishnan.buddiapp"
-                        class="btn btn-android">
+                    <a href="#" onclick="openAndroidModal(event)" class="btn btn-android">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path
-                                d="M17.6 11.48V8.27a6.68 6.68 0 0 0-1.62-4.4 6.4 6.4 0 0 0-4.15-2.07 6.27 6.27 0 0 0-4.59 1.5A6.49 6.49 0 0 0 5.4 7.96v3.52a1.9 1.9 0 0 0-1.4 1.84v5.68a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-5.68a1.9 1.9 0 0 0-1.4-1.84zM12 17.72a1.68 1.68 0 1 1 0-3.36 1.68 1.68 0 0 1 0 3.36zm3.6-6.24H8.4V8.07a3.6 3.6 0 1 1 7.2 0v3.41z" />
+                                d="M17.523 15.3414c-1.317.987-2.868 1.598-4.561 1.833L12.915 17.268C12.962 17.315 12.962 17.315 13.009 17.315c1.693-.235 3.244-.846 4.561-1.833.047-.047.094-.047.141-.047.047 0 .094 0 .141.047 4.088-2.773 6.814-7.426 7.049-12.737-.235-4.234-2.42-7.859-5.717-10.054C17.661.583 15.407.066 13.009.066c-.047 0-.047 0-.094-.047-.235 0-.47 0-.705 0-.047 0-.094 0-.141 0-.235 0-.47 0-.705 0-.047 0-.047 0-.094 0-2.398 0-4.652.47-6.664 1.316-3.297 2.195-5.482 5.82-5.717 10.054.235 5.31 2.961 9.964 7.049 12.737.047-.047.094-.047.141-.047.047 0 .094 0 .141.047 1.317-.987 2.868-1.598 4.561-1.833l-.047-.094c-1.693.235-3.244.846-4.561 1.833-.047.047-.094.047-.141.047-.047 0-.094 0-.141-.047-4.088 2.773-6.814 7.426-7.049 12.737.235 4.234 2.42 7.859 5.717 10.054 1.527 1.058 3.321 1.693 5.253 1.787v-5.688c-1.88-.235-3.337-1.833-3.337-3.761 0-2.115 1.692-3.808 3.808-3.808 2.115 0 3.808 1.692 3.808 3.808 0 1.928-1.457 3.526-3.337 3.761v5.688c1.932-.094 3.726-.729 5.253-1.787 3.297-2.195 5.482-5.82 5.717-10.054-.235-5.31-2.961-9.964-7.049-12.737-.047.047-.094.047-.141.047-.047 0-.094 0-.141-.047zM5.631 5.612C5.631 4.766 6.336 4.061 7.182 4.061c.846 0 1.551.705 1.551 1.551 0 .846-.705 1.551-1.551 1.551-.846 0-1.551-.705-1.551-1.551zm11.516 1.551c-.846 0-1.551-.705-1.551-1.551 0-.846.705-1.551 1.551-1.551.846 0 1.551.705 1.551 1.551 0 .846-.705 1.551-1.551 1.551z" />
                         </svg>
                         Android
                     </a>
@@ -1598,6 +1593,22 @@
         </div>
     </div>
 
+    <!-- Android Beta Modal -->
+    <div class="modal-overlay" id="androidModal">
+        <div class="beta-modal-content">
+            <button class="modal-close" id="androidModalClose">✕</button>
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+            <h3>Join Android Beta</h3>
+            <p>We're currently in closed testing on Android. To get early access, apply to join our tester group!</p>
+            <a href="mailto:help.buddi.app@gmail.com?subject=Android Beta Access Request&body=Hi, I would like to join the Buddi Android Beta testing group! Please add me to the list."
+                class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Apply to be a Tester
+            </a>
+            <p style="font-size: 0.85rem; margin-top: 1.5rem; margin-bottom: 0;">We'll email you with instructions to
+                download the app.</p>
+        </div>
+    </div>
+
     <!-- Video Section -->
     <section class="video-section" id="demo">
         <div class="section-container">
@@ -1700,7 +1711,7 @@
             <a href="https://testflight.apple.com/join/jKjwnTnw" class="store-badge">
                 <img src="images/app-store-badge.svg" alt="Download on the App Store" height="54">
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.pranavkrishnan.buddiapp" class="store-badge">
+            <a href="#" onclick="openAndroidModal(event)" class="store-badge">
                 <img src="images/google-play-badge.png" alt="Get it on Google Play" height="54">
             </a>
         </div>
@@ -1711,8 +1722,7 @@
         <a href="https://testflight.apple.com/join/jKjwnTnw" class="floating-btn floating-btn-apple">
             <img src="images/app-store-badge.svg" alt="App Store" height="40">
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.pranavkrishnan.buddiapp"
-            class="floating-btn floating-btn-google">
+        <a href="#" onclick="openAndroidModal(event)" class="floating-btn floating-btn-google">
             <img src="images/google-play-badge.png" alt="Google Play" height="40">
         </a>
     </div>
@@ -1886,6 +1896,27 @@
             if (e.key === 'Escape') closeModal();
             if (e.key === 'ArrowLeft') navigateModal(-1);
             if (e.key === 'ArrowRight') navigateModal(1);
+        });
+
+        // Android Beta Modal Logic
+        const androidModal = document.getElementById('androidModal');
+        const androidModalClose = document.getElementById('androidModalClose');
+
+        function openAndroidModal(e) {
+            if (e) e.preventDefault();
+            androidModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAndroidModal() {
+            androidModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        androidModalClose.addEventListener('click', closeAndroidModal);
+
+        androidModal.addEventListener('click', (e) => {
+            if (e.target === androidModal) closeAndroidModal();
         });
     </script>
 </body>
